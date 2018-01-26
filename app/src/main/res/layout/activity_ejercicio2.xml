@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dm2.sqlite.Ejercicio2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo: "
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autor: "
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/txtAutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id a borrar/modificar: "
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="borrarLibro"
+            android:text="BORRAR"
+            android:id="@+id/btnBorrar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="insertar"
+            android:onClick="insertarLibro"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="modificar"
+            android:onClick="modificarLibro"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="buscar"
+            android:onClick="buscarLibros"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="listar"
+            android:onClick="listarLibros"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView   android:id="@+id/txtEjer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
